@@ -1,4 +1,4 @@
-package bootsrc.grayscale.core;
+package bootsrc.drouter.core;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.Activate;

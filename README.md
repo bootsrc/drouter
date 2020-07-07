@@ -34,3 +34,6 @@ No provider available for the service bootsrc.api.DemoService:0.0.1
 Hello, xxx
 ```
 
+drouter-core可以作为一个jar包被引用。算一个框架的雏形。
+drouter-api, drouter-provider, drouter-consumer仅仅是demo，用来展示drouter-core的应用的。
+

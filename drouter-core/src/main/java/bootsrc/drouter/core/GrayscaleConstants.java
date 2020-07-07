@@ -1,4 +1,4 @@
-package bootsrc.grayscale.core;
+package bootsrc.drouter.core;
 
 public class GrayscaleConstants {
     public static final String ROUTER_IP = "router_ip";
