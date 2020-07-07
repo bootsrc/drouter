@@ -22,7 +22,7 @@
 如果设置了router_ip，则只会调用这个ip机器上到provider。
 从而应用了自定义router机制。
 
-step3: 浏览器输入 [http://localhost:12501/action?input=xxx](http://localhost:12501/action?input=xxx)
+- step3: 浏览器输入 [http://localhost:12501/action?input=xxx](http://localhost:12501/action?input=xxx)
 看效果。
 
 如果输入错误的ip。页面上会报错如下
@@ -37,7 +37,9 @@ Hello, xxx
 drouter-core可以作为一个jar包被引用。算一个框架的雏形。
 drouter-api, drouter-provider, drouter-consumer仅仅是demo，用来展示drouter-core的应用的。
 
-关键点
+<br/>
+
+## 源码解析
 GrayscaleRouter.java
 ```java
 /**
