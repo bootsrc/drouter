@@ -44,10 +44,11 @@
             <artifactId>drouter-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.apache.dubbo</groupId>-->
-<!--            <artifactId>dubbo</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>bootsrc.drouter</groupId>
+            <artifactId>drouter-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

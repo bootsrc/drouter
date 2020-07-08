@@ -12,7 +12,8 @@ import org.slf4j.LoggerFactory;
  * @author liushaoming
  * @date 2020-07-07 10:31 上午
  */
-@Activate(group = {CommonConstants.CONSUMER})
+@Activate
+// (group = {CommonConstants.CONSUMER})
 public class GrayscaleRouterFactory implements RouterFactory {
     private static final Logger LOGGER = LoggerFactory.getLogger(GrayscaleRouterFactory.class);
 

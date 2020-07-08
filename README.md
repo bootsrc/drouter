@@ -1,6 +1,6 @@
 # drouter
 
-简介：drouter项目是Dubbo 自定义router的应用。
+简介：drouter项目是Dubbo自定义router的应用。比如consumer想调用指定ip的机器上的provider。
 
 步骤：
 
