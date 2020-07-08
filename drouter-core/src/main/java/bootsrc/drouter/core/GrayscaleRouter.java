@@ -1,6 +1,7 @@
 package bootsrc.drouter.core;
 
 import org.apache.dubbo.common.URL;
+import org.apache.dubbo.common.constants.CommonConstants;
 import org.apache.dubbo.rpc.Invocation;
 import org.apache.dubbo.rpc.Invoker;
 import org.apache.dubbo.rpc.RpcContext;
@@ -37,6 +38,13 @@ public class GrayscaleRouter implements Router, Comparable<Router> {
         if (invokers == null) {
             return null;
         }
+
+        String side = url.getParameter(CommonConstants.SIDE_KEY);
+        // 只处理consumer side的路由。对于provider的invokers则直接放行
+        if (!CommonConstants.CONSUMER_SIDE.equals(side)) {
+            return invokers;
+        }
+
         String ip = RpcContext.getContext().getAttachment(GrayscaleConstants.ROUTER_IP);
         if (StringUtils.isEmpty(ip)) {
             ip = System.getProperty(GrayscaleConstants.ROUTER_IP);
