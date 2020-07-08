@@ -13,9 +13,9 @@ import org.slf4j.LoggerFactory;
  */
 @Activate
 public class GrayscaleRouterFactory implements RouterFactory {
-    private static final Logger LOGGER= LoggerFactory.getLogger(GrayscaleRouterFactory.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GrayscaleRouterFactory.class);
 
-    private GrayscaleRouterFactory() {
+    public GrayscaleRouterFactory() {
         LOGGER.info("GrayscaleRouterFactory_construct");
     }
 
