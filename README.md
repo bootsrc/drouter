@@ -157,3 +157,9 @@ public class GrayscaleRouterFactory implements RouterFactory {
     }
 }
 ```
+
+## 总结
+GrayscaleRouterFactory只在项目启动的过程中被调用getRouter(URL url)一次
+
+GrayscaleRouter调用次数：
+每次dubbo调用的时候，GrayscaleRouter#route(invokers)都会被调用一次。

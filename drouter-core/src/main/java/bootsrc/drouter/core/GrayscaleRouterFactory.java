@@ -4,6 +4,8 @@ import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.Activate;
 import org.apache.dubbo.rpc.cluster.Router;
 import org.apache.dubbo.rpc.cluster.RouterFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author liushaoming
@@ -11,6 +13,12 @@ import org.apache.dubbo.rpc.cluster.RouterFactory;
  */
 @Activate
 public class GrayscaleRouterFactory implements RouterFactory {
+    private static final Logger LOGGER= LoggerFactory.getLogger(GrayscaleRouterFactory.class);
+
+    private GrayscaleRouterFactory() {
+        LOGGER.info("GrayscaleRouterFactory_construct");
+    }
+
     @Override
     public Router getRouter(URL url) {
         return new GrayscaleRouter(url);
